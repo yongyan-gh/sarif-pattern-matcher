@@ -43,9 +43,9 @@ jobs:
         .\BuildAndTest.cmd -NoFormat -NoTest
 
     - name: Disk Usage Analytics
-        run: |
-          echo "Free space:"
-          df -h
+      run: |
+        echo "Free space:"
+        df -h
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
